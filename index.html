@@ -1,22 +1,615 @@
-<!doctype html><html data-build-id="97cedc7bf4" data-git-hash="db38ddfa56efa8b72afbfca77b01fa97cedc7bf4" data-build-timestamp="1775359404" data-version="1.0.0" data-env="" lang="en" data-theme="claude" data-mode="light" class="h-screen antialiased scroll-smooth"><head data-ion-ip-country="IN"><link rel="preconnect" href="https://assets-proxy.anthropic.com" crossorigin><link rel="dns-prefetch" href="https://assets-proxy.anthropic.com"><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>Claude</title><meta name="description" content="Claude is Anthropic's AI, built for problem solvers. Tackle complex challenges, analyze data, write code, and think through your hardest work."><meta name="apple-itunes-app" content="app-id=6473753684"><meta property="og:type" content="website"><meta property="og:site_name" content="Claude"><meta property="og:image" content="https://claude.ai/images/claude_ogimage.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image"><link rel="icon" type="image/svg+xml" href="https://assets-proxy.anthropic.com/claude-ai/v2/assets/v1/cd02a42d9-Vq_H3mgS.svg"><link rel="icon" type="image/png" sizes="32x32" href="https://assets-proxy.anthropic.com/claude-ai/v2/assets/v1/ce67964e7-CAX1bqSh.png"><link rel="icon" type="image/png" sizes="16x16" href="https://assets-proxy.anthropic.com/claude-ai/v2/assets/v1/c03e51811-DebilQLI.png"><link rel="shortcut icon" href="/favicon.ico"><link rel="apple-touch-icon" href="https://assets-proxy.anthropic.com/claude-ai/v2/assets/v1/c129d018a-jJjJELY8.png"><link rel="apple-touch-startup-image" href="/images/claude_app_icon.png"><link rel="manifest" href="/manifest.json"><meta name="mobile-web-app-capable" content="yes"><link rel="preload" href="https://assets-proxy.anthropic.com/claude-ai/v2/assets/v1/cc27851ad-CFxw3nG7.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://assets-proxy.anthropic.com/claude-ai/v2/assets/v1/c66fc489e-C-BHYa_K.woff2" as="font" type="font/woff2" crossorigin><script nonce="Yh6U3/n9aEmqibMyk3RsSg==">void 0===globalThis.process&&(globalThis.process={env:{},cwd:function(){return"/"}}),void 0===globalThis.global&&(globalThis.global=globalThis)</script><script type="application/ld+json" nonce="Yh6U3/n9aEmqibMyk3RsSg==">{
-        "@context": "https://schema.org",
-        "@graph": [
-          {
-            "@type": "WebSite",
-            "name": "Claude",
-            "alternateName": ["Claude.ai", "Claude by Anthropic"],
-            "url": "https://claude.com"
-          },
-          {
-            "@type": "Organization",
-            "name": "Anthropic",
-            "url": "https://www.anthropic.com",
-            "logo": "https://claude.ai/images/claude_ogimage.png",
-            "sameAs": [
-              "https://x.com/AnthropicAI",
-              "https://www.linkedin.com/company/anthropic",
-              "https://www.youtube.com/@anthropic-ai"
-            ]
-          }
-        ]
-      }</script><script nonce="Yh6U3/n9aEmqibMyk3RsSg==">!function(){try{performance.mark?.("rq_cache:preload_start");const e="keyval-store",o="keyval",r="react-query-cache",t=new Promise(t=>{if(!window.indexedDB)return void t(void 0);const c=indexedDB.open(e);c.onupgradeneeded=()=>{c.transaction?.abort()},c.onerror=()=>t(void 0),c.onsuccess=()=>{const a=c.result;if(!a.objectStoreNames.contains(o))return a.close(),indexedDB.deleteDatabase(e),void t(void 0);try{const e=a.transaction(o,"readonly").objectStore(o).get(r);e.onerror=()=>{a.close(),t(void 0)},e.onsuccess=()=>{a.close(),window.__PRELOADED_IDB_CACHE_RESULT__=e.result,t(e.result)}}catch{a.close(),t(void 0)}}});window.__PRELOADED_IDB_CACHE__=t,performance.measure?.("rq_cache:preload_exec",{start:"rq_cache:preload_start"})}catch{}}()</script><script type="module" crossorigin src="https://assets-proxy.anthropic.com/claude-ai/v2/assets/v1/index-CkTZiI-0.js" nonce="Yh6U3/n9aEmqibMyk3RsSg=="></script><link rel="modulepreload" crossorigin href="https://assets-proxy.anthropic.com/claude-ai/v2/assets/v1/vendor-CdYtgn4m.js"><link rel="modulepreload" crossorigin href="https://assets-proxy.anthropic.com/claude-ai/v2/assets/v1/tree-sitter-jrPhcVCG.js"><link rel="stylesheet" crossorigin href="https://assets-proxy.anthropic.com/claude-ai/v2/assets/v1/c6a992d55-1fO2Qm3h.css"></head><body class="bg-bg-100 text-text-100 font-ui min-h-screen"><div id="root"></div><script nonce="Yh6U3/n9aEmqibMyk3RsSg==">(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.nonce='Yh6U3/n9aEmqibMyk3RsSg==';d.innerHTML="window.__CF$cv$params={r:'9e806fb018f02edc',t:'MTc3NTQ3NDc3Mi4wMDAwMDA='};var a=document.createElement('script');a.nonce='Yh6U3/n9aEmqibMyk3RsSg==';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Lead Qualification & Handoff System</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:#f8f9fa;color:#1a1a1a;min-height:100vh;padding:1rem;}
+.app{max-width:900px;margin:0 auto;padding:1rem 0;}
+.hdr{margin-bottom:1rem;}
+.hdr h1{font-size:20px;font-weight:600;color:#1a1a1a;}
+.hdr p{font-size:12px;color:#666;margin-top:3px;}
+.tag{display:inline-block;font-size:10px;padding:2px 8px;border-radius:10px;background:#d4edda;color:#155724;margin-left:6px;vertical-align:middle;}
+.tabs{display:flex;gap:2px;border-bottom:1px solid #dee2e6;margin:1rem 0;flex-wrap:wrap;}
+.tab{padding:7px 12px;font-size:12px;cursor:pointer;color:#666;border:none;background:none;border-bottom:2px solid transparent;margin-bottom:-1px;}
+.tab.active{color:#1a1a1a;border-bottom-color:#1a1a1a;font-weight:600;}
+.panel{display:none;}.panel.active{display:block;}
+.wf{display:flex;margin-bottom:1rem;}
+.wf-step{flex:1;text-align:center;position:relative;}
+.wf-step:not(:last-child)::after{content:'';position:absolute;top:13px;left:50%;width:100%;height:1px;background:#dee2e6;z-index:0;}
+.wf-dot{width:26px;height:26px;border-radius:50%;margin:0 auto 4px;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:600;position:relative;z-index:1;}
+.wd{background:#9FE1CB;color:#085041;}
+.wa{background:#185FA5;color:#fff;}
+.wp{background:#e9ecef;color:#999;border:1px solid #dee2e6;}
+.wl{font-size:10px;color:#666;}
+.chat-wrap{background:#f1f3f5;border-radius:12px;border:1px solid #dee2e6;overflow:hidden;}
+.msgs{height:300px;overflow-y:auto;padding:1rem;display:flex;flex-direction:column;gap:8px;}
+.msg{max-width:82%;}
+.msg.bot{align-self:flex-start;}.msg.usr{align-self:flex-end;}
+.bbl{padding:9px 13px;border-radius:12px;font-size:13px;line-height:1.5;}
+.msg.bot .bbl{background:#fff;border:1px solid #dee2e6;color:#1a1a1a;border-radius:4px 12px 12px 12px;}
+.msg.usr .bbl{background:#185FA5;color:#fff;border-radius:12px 4px 12px 12px;}
+.mtime{font-size:10px;color:#999;margin-top:2px;padding:0 3px;}
+.msg.usr .mtime{text-align:right;}
+.opts{display:flex;flex-direction:column;gap:5px;padding:10px 1rem;border-top:1px solid #dee2e6;background:#fff;}
+.opt{font-size:13px;padding:8px 13px;border:1px solid #dee2e6;border-radius:8px;background:none;cursor:pointer;color:#1a1a1a;text-align:left;}
+.opt:hover{background:#f1f3f5;}
+.cform{display:flex;flex-direction:column;gap:8px;padding:10px 1rem;border-top:1px solid #dee2e6;background:#fff;}
+.cform input{font-size:13px;padding:8px 12px;border:1px solid #dee2e6;border-radius:8px;background:#f8f9fa;color:#1a1a1a;width:100%;}
+.cbtns{display:flex;gap:6px;flex-wrap:wrap;}
+.cbtns button{flex:1;font-size:12px;padding:8px;border:1px solid #dee2e6;border-radius:8px;background:none;cursor:pointer;color:#1a1a1a;}
+.cbtns button:hover{background:#f1f3f5;}
+.irow{display:flex;gap:7px;padding:9px 1rem;border-top:1px solid #dee2e6;background:#fff;}
+.irow input{flex:1;font-size:13px;padding:8px 12px;border:1px solid #dee2e6;border-radius:8px;background:#f8f9fa;}
+.irow button{padding:0 16px;font-size:13px;background:#185FA5;color:#fff;border:none;border-radius:8px;cursor:pointer;height:38px;}
+.irow button:disabled{opacity:.4;cursor:not-allowed;}
+.err{font-size:11px;color:#c0392b;padding:4px 1rem 6px;background:#fff;display:none;}
+.g3{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:1.2rem;}
+.g2{display:grid;grid-template-columns:1fr 1fr;gap:10px;}
+.mc{background:#fff;border-radius:8px;padding:.9rem;border:1px solid #dee2e6;}
+.ml{font-size:11px;color:#666;margin-bottom:3px;}
+.mv{font-size:22px;font-weight:600;color:#1a1a1a;}
+.ms{font-size:11px;color:#999;margin-top:1px;}
+.card{background:#fff;border:1px solid #dee2e6;border-radius:12px;padding:1rem 1.2rem;margin-bottom:.9rem;}
+.ct{font-size:13px;font-weight:600;color:#1a1a1a;margin-bottom:10px;}
+.lrow{display:flex;align-items:center;gap:9px;padding:9px 0;border-bottom:1px solid #f1f3f5;cursor:pointer;}
+.lrow:last-child{border-bottom:none;}.lrow:hover{background:#f8f9fa;margin:0 -8px;padding:9px 8px;}
+.av{width:32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:600;flex-shrink:0;}
+.ab{background:#B5D4F4;color:#0C447C;}.at{background:#9FE1CB;color:#085041;}.aa{background:#FAC775;color:#633806;}.ac{background:#F5C4B3;color:#712B13;}.ap{background:#CECBF6;color:#3C3489;}
+.li{flex:1;min-width:0;}
+.ln{font-size:12px;font-weight:600;color:#1a1a1a;}
+.ld{font-size:11px;color:#666;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.bdg{display:inline-block;font-size:10px;padding:2px 8px;border-radius:10px;font-weight:600;}
+.bh{background:#fde8e4;color:#c0392b;}.bw{background:#fef3cd;color:#856404;}.bc{background:#cce5ff;color:#004085;}
+.hfc{background:#fff;border:1px solid #dee2e6;border-radius:12px;padding:1.2rem;}
+.hs{margin-bottom:.9rem;padding-bottom:.9rem;border-bottom:1px solid #f1f3f5;}
+.hs:last-child{border-bottom:none;margin-bottom:0;padding-bottom:0;}
+.hl{font-size:10px;color:#999;text-transform:uppercase;letter-spacing:.5px;margin-bottom:5px;}
+.hv{font-size:13px;color:#1a1a1a;line-height:1.5;}
+.sbar{height:5px;background:#e9ecef;border-radius:3px;overflow:hidden;margin-top:4px;}
+.sf{height:100%;border-radius:3px;transition:width .5s;}
+.ntc{background:#d4edda;border:1px solid #c3e6cb;border-radius:8px;padding:9px 13px;font-size:12px;color:#155724;margin-bottom:.9rem;}
+.ntcw{background:#fff3cd;border-color:#ffeeba;color:#856404;}
+.abtn{font-size:12px;padding:7px 14px;background:#fff;border:1px solid #dee2e6;border-radius:8px;cursor:pointer;color:#1a1a1a;}
+.abtn:hover{background:#f1f3f5;}
+.n8n-c{background:#1a1a2e;border-radius:12px;padding:16px;overflow-x:auto;}
+.nd{border-radius:8px;padding:9px 11px;min-width:108px;max-width:128px;text-align:center;border:1.5px solid transparent;}
+.ni{font-size:16px;margin-bottom:3px;display:block;}
+.nl{font-size:11px;font-weight:600;color:#fff;line-height:1.3;}
+.ns{font-size:9px;color:rgba(255,255,255,0.55);margin-top:2px;line-height:1.3;}
+.nwh{background:#2d4a22;border-color:#4CAF50;}
+.nif{background:#1a3a5c;border-color:#2196F3;}
+.nsh{background:#1a4a2a;border-color:#34A853;}
+.nwa{background:#1a3d1a;border-color:#25D366;}
+.nsl{background:#3d1a4a;border-color:#9C27B0;}
+.ngm{background:#4a1a1a;border-color:#EA4335;}
+.nwt{background:#3d3d1a;border-color:#FFC107;}
+.ncr{background:#3d2a1a;border-color:#FF9800;}
+.nst{background:#1a3d3d;border-color:#00BCD4;}
+.ah{width:28px;height:2px;background:rgba(255,255,255,0.2);position:relative;margin-top:19px;}
+.ah::after{content:'';position:absolute;right:-4px;top:-3px;border-left:7px solid rgba(255,255,255,0.2);border-top:4px solid transparent;border-bottom:4px solid transparent;}
+.av2{width:2px;height:18px;background:rgba(255,255,255,0.2);position:relative;margin:0 auto;}
+.av2::after{content:'';position:absolute;bottom:-4px;left:-3px;border-top:7px solid rgba(255,255,255,0.2);border-left:4px solid transparent;border-right:4px solid transparent;}
+.stl{font-size:10px;color:rgba(255,255,255,0.35);text-transform:uppercase;letter-spacing:.5px;margin:12px 0 6px;}
+.tl{font-size:10px;padding:2px 8px;border-radius:10px;margin-bottom:5px;font-weight:600;text-align:center;}
+.tlh{background:#fde8e4;color:#c0392b;}.tlw{background:#fef3cd;color:#856404;}.tlc{background:#cce5ff;color:#004085;}
+</style>
+</head>
+<body>
+<div class="app">
+<div class="hdr">
+  <h1>Lead Qualification & Handoff System <span class="tag">No API key · Works offline</span></h1>
+  <p>Structured BANT qualification → intelligent scoring → rep-ready brief → CRM-ready export</p>
+</div>
+<div class="tabs">
+  <button class="tab active" onclick="sw('chat')">Qualifier</button>
+  <button class="tab" onclick="sw('pipeline')">Pipeline</button>
+  <button class="tab" onclick="sw('brief')">Rep brief</button>
+  <button class="tab" onclick="sw('dashboard')">Dashboard</button>
+  <button class="tab" onclick="sw('n8n')">n8n workflow</button>
+  <button class="tab" onclick="sw('about')">How it works</button>
+</div>
+
+<div id="panel-chat" class="panel active">
+  <div class="wf" id="wf"></div>
+  <div class="chat-wrap">
+    <div class="msgs" id="msgs"></div>
+    <div id="cform" class="cform" style="display:none;">
+      <input type="tel" id="c-ph" maxlength="10" placeholder="WhatsApp number (10 digits, starts 5–9)"/>
+      <input type="email" id="c-em" placeholder="Email address (e.g. name@company.com)"/>
+      <div class="cbtns">
+        <button onclick="doContact('now')">Yes — contact me today</button>
+        <button onclick="doContact('3d')">Yes — within 3 business days</button>
+        <button onclick="doContact('no')" style="color:#c0392b;">No thanks, just browsing</button>
+      </div>
+    </div>
+    <div id="opts" class="opts" style="display:none;"></div>
+    <div class="err" id="err"></div>
+    <div class="irow" id="irow">
+      <input type="text" id="inp" placeholder="Type your answer..." onkeydown="if(event.key==='Enter')doText()"/>
+      <button id="sbtn" onclick="doText()">Send</button>
+    </div>
+  </div>
+  <div style="margin-top:10px;text-align:right;">
+    <button class="abtn" onclick="doReset()">New prospect</button>
+  </div>
+</div>
+
+<div id="panel-pipeline" class="panel">
+  <div class="g3">
+    <div class="mc"><div class="ml">Total leads</div><div class="mv" id="pt">4</div><div class="ms">this session</div></div>
+    <div class="mc"><div class="ml">Hot leads</div><div class="mv" id="ph" style="color:#c0392b;">2</div><div class="ms">contact today</div></div>
+    <div class="mc"><div class="ml">Avg score</div><div class="mv" id="pa">71%</div><div class="ms">qualification rate</div></div>
+  </div>
+  <div class="card"><div class="ct">All prospects — click any row to view rep brief</div><div id="plist"></div></div>
+</div>
+
+<div id="panel-brief" class="panel">
+  <div id="bem" class="ntc ntcw">Complete a qualification first — the rep brief appears here automatically.</div>
+  <div id="bcon" style="display:none;">
+    <div class="ntc">Rep brief auto-generated — copy and share with your sales rep or paste into CRM.</div>
+    <div class="hfc">
+      <div class="hs"><div class="hl">Prospect</div><div class="hv" id="bn" style="font-weight:600;font-size:16px;"></div><div style="margin-top:5px;" id="bb"></div></div>
+      <div class="hs"><div class="g2"><div><div class="hl">WhatsApp</div><div class="hv" id="bph"></div></div><div><div class="hl">Email</div><div class="hv" id="bem2" style="font-size:12px;word-break:break-all;"></div></div></div></div>
+      <div class="hs"><div class="hl">Contact preference</div><div class="hv" id="bcp"></div></div>
+      <div class="hs"><div class="hl">Company & team</div><div class="hv" id="bco"></div></div>
+      <div class="hs"><div class="hl">Primary need</div><div class="hv" id="bne"></div></div>
+      <div class="hs"><div class="g2"><div><div class="hl">Budget</div><div class="hv" id="bbu"></div></div><div><div class="hl">Timeline</div><div class="hv" id="bti"></div></div></div></div>
+      <div class="hs"><div class="hl">Decision authority</div><div class="hv" id="bau"></div></div>
+      <div class="hs"><div class="hl">Score breakdown</div><div id="bdims"></div><div style="margin-top:10px;"><div style="display:flex;justify-content:space-between;font-size:12px;color:#666;margin-bottom:4px;"><span id="btier"></span><span id="bspc"></span></div><div class="sbar"><div class="sf" id="bsf" style="width:0%;"></div></div></div></div>
+      <div class="hs"><div class="hl">Rep notes</div><div class="hv" id="bno" style="font-size:12px;line-height:1.6;"></div></div>
+      <div class="hs"><div class="hl">Recommended next action</div><div class="hv" id="bac" style="font-weight:600;color:#185FA5;"></div></div>
+    </div>
+    <div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap;">
+      <button class="abtn" onclick="doCopyBrief()">Copy brief</button>
+      <button class="abtn" onclick="doCopyCRM()">Copy CRM row (with headers)</button>
+    </div>
+    <div id="crm-ok" style="display:none;font-size:12px;color:#155724;margin-top:6px;padding:8px;background:#d4edda;border-radius:6px;">Copied with headers! Open Google Sheet → click cell A1 → Ctrl+V</div>
+  </div>
+</div>
+
+<div id="panel-dashboard" class="panel">
+  <div class="g3" style="margin-bottom:1rem;">
+    <div class="mc"><div class="ml">Total</div><div class="mv" id="dt"></div></div>
+    <div class="mc"><div class="ml">Hot</div><div class="mv" id="dh" style="color:#c0392b;"></div><div class="ms">contact today</div></div>
+    <div class="mc"><div class="ml">Warm</div><div class="mv" id="dw" style="color:#856404;"></div><div class="ms">follow up this week</div></div>
+  </div>
+  <div class="g2" style="margin-bottom:1rem;">
+    <div class="mc"><div class="ml">Cold</div><div class="mv" id="dc" style="color:#004085;"></div><div class="ms">newsletter only</div></div>
+    <div class="mc"><div class="ml">Valid contacts</div><div class="mv" id="dvc"></div><div class="ms">phone + email verified</div></div>
+  </div>
+  <div class="card"><div class="ct">Score distribution</div><div id="dch"></div></div>
+  <div class="card"><div class="ct">Top needs identified</div><div id="dne"></div></div>
+</div>
+
+<div id="panel-n8n" class="panel">
+  <div class="card">
+    <div class="ct">n8n automation — production workflow</div>
+    <div style="font-size:12px;color:#666;margin-bottom:14px;">Exact nodes as they appear in n8n. Self-hosted n8n is free forever (deploy on Railway or Render free tier).</div>
+    <div class="n8n-c">
+      <div class="stl">Step 1 — triggers</div>
+      <div style="display:flex;gap:16px;align-items:flex-start;flex-wrap:wrap;">
+        <div style="display:flex;flex-direction:column;align-items:center;">
+          <div class="nd nwh"><span class="ni">🔗</span><div class="nl">Webhook</div><div class="ns">Form submit POST /qualify</div></div>
+          <div class="av2"></div>
+        </div>
+        <div style="color:rgba(255,255,255,0.25);font-size:11px;padding-top:28px;">OR</div>
+        <div style="display:flex;flex-direction:column;align-items:center;">
+          <div class="nd ncr"><span class="ni">⏰</span><div class="nl">Schedule trigger</div><div class="ns">Daily 9am stale lead check</div></div>
+          <div class="av2"></div>
+        </div>
+      </div>
+      <div class="stl">Step 2 — enrich & log to CRM</div>
+      <div style="display:flex;gap:10px;align-items:center;flex-wrap:wrap;">
+        <div class="nd nst"><span class="ni">✏️</span><div class="nl">Set node</div><div class="ns">Add timestamp format fields</div></div>
+        <div class="ah"></div>
+        <div class="nd nsh"><span class="ni">📊</span><div class="nl">Google Sheets</div><div class="ns">Append row to CRM sheet</div></div>
+        <div class="ah"></div>
+        <div class="nd nif"><span class="ni">🔀</span><div class="nl">IF node</div><div class="ns">Route by tier hot/warm/cold</div></div>
+      </div>
+      <div class="stl">Step 3 — branch by tier</div>
+      <div style="display:flex;gap:16px;flex-wrap:wrap;align-items:flex-start;">
+        <div style="display:flex;flex-direction:column;align-items:center;gap:5px;">
+          <div class="tl tlh">HOT — score 70+</div>
+          <div class="nd nwa"><span class="ni">💬</span><div class="nl">WhatsApp</div><div class="ns">WATI "Calling you today"</div></div>
+          <div class="av2"></div>
+          <div class="nd nsl"><span class="ni">🔔</span><div class="nl">Slack</div><div class="ns">Alert sales rep with brief</div></div>
+          <div class="av2"></div>
+          <div class="nd nsh"><span class="ni">📊</span><div class="nl">Google Sheets</div><div class="ns">Update → Rep alerted</div></div>
+        </div>
+        <div style="display:flex;flex-direction:column;align-items:center;gap:5px;">
+          <div class="tl tlw">WARM — 40 to 69</div>
+          <div class="nd nwa"><span class="ni">💬</span><div class="nl">WhatsApp</div><div class="ns">WATI "In touch in 3 days"</div></div>
+          <div class="av2"></div>
+          <div class="nd nwt"><span class="ni">⏳</span><div class="nl">Wait node</div><div class="ns">3 business days delay</div></div>
+          <div class="av2"></div>
+          <div class="nd ngm"><span class="ni">📧</span><div class="nl">Gmail</div><div class="ns">Send brief to sales rep</div></div>
+        </div>
+        <div style="display:flex;flex-direction:column;align-items:center;gap:5px;">
+          <div class="tl tlc">COLD — under 40 or declined</div>
+          <div class="nd ngm"><span class="ni">📧</span><div class="nl">Gmail/Mailchimp</div><div class="ns">Add to newsletter no sales</div></div>
+          <div class="av2"></div>
+          <div class="nd nsh"><span class="ni">📊</span><div class="nl">Google Sheets</div><div class="ns">Tag cold 60-day revisit</div></div>
+        </div>
+      </div>
+      <div class="stl">Step 4 — cron: daily stale lead follow-up (9am)</div>
+      <div style="display:flex;gap:10px;align-items:center;flex-wrap:wrap;">
+        <div class="nd nsh"><span class="ni">📊</span><div class="nl">Google Sheets</div><div class="ns">Read warm leads no reply 3+ days</div></div>
+        <div class="ah"></div>
+        <div class="nd nif"><span class="ni">🔀</span><div class="nl">IF node</div><div class="ns">Still warm? Check status</div></div>
+        <div class="ah"></div>
+        <div class="nd nwa"><span class="ni">💬</span><div class="nl">WhatsApp</div><div class="ns">Auto follow-up reminder</div></div>
+        <div class="ah"></div>
+        <div class="nd nsh"><span class="ni">📊</span><div class="nl">Google Sheets</div><div class="ns">Update "Followed up"</div></div>
+      </div>
+      <div style="margin-top:14px;display:flex;flex-wrap:wrap;gap:8px;">
+        <div style="display:flex;align-items:center;gap:4px;font-size:10px;color:rgba(255,255,255,0.5);"><div style="width:9px;height:9px;border-radius:2px;background:#4CAF50;"></div>Webhook/trigger</div>
+        <div style="display:flex;align-items:center;gap:4px;font-size:10px;color:rgba(255,255,255,0.5);"><div style="width:9px;height:9px;border-radius:2px;background:#2196F3;"></div>IF/routing</div>
+        <div style="display:flex;align-items:center;gap:4px;font-size:10px;color:rgba(255,255,255,0.5);"><div style="width:9px;height:9px;border-radius:2px;background:#34A853;"></div>Google Sheets</div>
+        <div style="display:flex;align-items:center;gap:4px;font-size:10px;color:rgba(255,255,255,0.5);"><div style="width:9px;height:9px;border-radius:2px;background:#25D366;"></div>WhatsApp (WATI)</div>
+        <div style="display:flex;align-items:center;gap:4px;font-size:10px;color:rgba(255,255,255,0.5);"><div style="width:9px;height:9px;border-radius:2px;background:#EA4335;"></div>Gmail/Mailchimp</div>
+        <div style="display:flex;align-items:center;gap:4px;font-size:10px;color:rgba(255,255,255,0.5);"><div style="width:9px;height:9px;border-radius:2px;background:#9C27B0;"></div>Slack</div>
+        <div style="display:flex;align-items:center;gap:4px;font-size:10px;color:rgba(255,255,255,0.5);"><div style="width:9px;height:9px;border-radius:2px;background:#FFC107;"></div>Wait/delay</div>
+        <div style="display:flex;align-items:center;gap:4px;font-size:10px;color:rgba(255,255,255,0.5);"><div style="width:9px;height:9px;border-radius:2px;background:#00BCD4;"></div>Set/transform</div>
+      </div>
+      <div style="margin-top:12px;padding:10px;background:rgba(255,255,255,0.04);border-radius:6px;font-size:11px;color:rgba(255,255,255,0.4);line-height:1.7;">
+        All free: n8n self-hosted on Railway/Render · Google Sheets · WATI WhatsApp free trial · Gmail · Slack free · Mailchimp free up to 500 contacts
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="panel-about" class="panel">
+  <div class="card">
+    <div class="ct">What this system does</div>
+    <div style="font-size:13px;color:#666;line-height:1.9;">
+      <div>1. Prospect chats via website, WhatsApp link, or email link</div>
+      <div>2. Structured 7-step BANT flow: name → company → need → budget → timeline → authority → contact</div>
+      <div>3. Scores across 4 dimensions: need fit (30pts), budget (25pts), urgency (25pts), authority (20pts) + contact bonus (10pts)</div>
+      <div>4. Hot = 70+ and gave contact. Warm = 40–69 and agreed to follow-up. Cold = declined OR low score</div>
+      <div>5. Rep brief auto-generated with score breakdown per dimension</div>
+      <div>6. CRM row copy includes column headers — paste directly into Google Sheet</div>
+      <div>7. In production: n8n automates CRM entry, WhatsApp, rep alert, stale lead follow-up</div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="ct">Scoring logic (prospect never sees this)</div>
+    <div style="font-size:13px;color:#666;line-height:1.9;">
+      <div>Need fit: Voice AI / lead qual = 30pts · Support/booking = 25pts · Other = 10pts</div>
+      <div>Budget: ₹1.5L+ = 25pts · ₹50k–1.5L = 18pts · Under ₹50k = 8pts · Undecided = 3pts</div>
+      <div>Urgency: Within 4 weeks = 25pts · This quarter = 18pts · Next quarter = 10pts · Exploring = 3pts</div>
+      <div>Authority: Decision maker = 20pts · Influencer = 14pts · Researcher = 7pts · Browsing = 2pts</div>
+      <div>Contact bonus: +10pts if valid phone + email and agreed to contact</div>
+      <div>Hot = 70+, Warm = 40–69, Cold = under 40 OR declined contact</div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="ct">Production n8n integration</div>
+    <div style="font-size:13px;color:#666;line-height:1.9;">
+      <div>Webhook trigger → Set node (format data) → Google Sheets (log all leads)</div>
+      <div>IF node routes by tier → Hot: WhatsApp now + Slack rep alert</div>
+      <div>Warm: WhatsApp + Wait 3 days + Gmail to rep</div>
+      <div>Cold: Newsletter add + Sheet tag</div>
+      <div>Cron 9am daily: check stale warm leads → auto WhatsApp follow-up</div>
+    </div>
+  </div>
+</div>
+</div>
+
+<script>
+const AVC=['ab','at','aa','ac','ap'];
+const WFL=['Name','Company','Need','Budget','Timeline','Authority','Contact','Done'];
+const CRM_HEADERS=['Name','Company','WhatsApp','Email','Contact Preference','Need','Budget','Timeline','Authority','Score','Tier','Next Action','Date'];
+
+const FLOW=[
+  {id:'name',stage:0,type:'text',ask:'Hi! Quick question to get started — what\'s your name?'},
+  {id:'company',stage:1,type:'text',ask:function(d){return'Nice to meet you, '+d.name+'! What company are you with, and how big is your team?'}},
+  {id:'need',stage:2,type:'opts',ask:'What\'s the main challenge you want to solve?',
+   opts:[
+    {l:'Qualify & route inbound leads automatically',s:{need:30}},
+    {l:'Handle customer support queries 24/7',s:{need:25}},
+    {l:'Automate appointment booking & scheduling',s:{need:25}},
+    {l:'Voice AI for inbound or outbound calls',s:{need:30}},
+    {l:'Other — let me describe',s:{need:10},other:true},
+   ]},
+  {id:'budget',stage:3,type:'opts',ask:'What\'s your rough monthly budget for this?',
+   opts:[
+    {l:'₹1.5L/month or more',s:{budget:25}},
+    {l:'₹50k–₹1.5L/month',s:{budget:18}},
+    {l:'Under ₹50k/month',s:{budget:8}},
+    {l:'No budget decided yet',s:{budget:3}},
+   ]},
+  {id:'timeline',stage:4,type:'opts',ask:'When are you looking to get something live?',
+   opts:[
+    {l:'Need it within 4 weeks',s:{urgency:25}},
+    {l:'This quarter (1–3 months)',s:{urgency:18}},
+    {l:'Next quarter (3–6 months)',s:{urgency:10}},
+    {l:'Just exploring for now',s:{urgency:3}},
+   ]},
+  {id:'authority',stage:5,type:'opts',ask:'What\'s your role in the buying decision?',
+   opts:[
+    {l:'I make the final call',s:{authority:20}},
+    {l:'I influence it but need sign-off',s:{authority:14}},
+    {l:'Researching for my manager',s:{authority:7}},
+    {l:'Just checking out options',s:{authority:2}},
+   ]},
+  {id:'contact',stage:6,type:'contact',ask:'Last step — drop your WhatsApp number and email so we can follow up:'},
+];
+
+var D={},SC={need:0,budget:0,urgency:0,authority:0,bonus:0};
+var step=0,done=false;
+var leads=[
+  {name:'Priya Mehta',company:'Lendingkart · 200 people',need:'Qualify & route inbound leads automatically',budget:'₹1.5L/month or more',timeline:'Need it within 4 weeks',authority:'I make the final call',phone:'9876543210',email:'priya@lendingkart.com',cpref:'Agreed — contact today',score:100,tier:'hot',sc:{need:30,budget:25,urgency:25,authority:20},notes:'Decision maker, top budget, urgent timeline, clear use case. Move fast.',action:'Call within 2 hours on WhatsApp. Send demo link and case study before call.',avc:'ab',ini:'PM'},
+  {name:'Rahul Sinha',company:'PropTiger · 500 people',need:'Voice AI for inbound or outbound calls',budget:'₹50k–₹1.5L/month',timeline:'This quarter (1–3 months)',authority:'I influence it but need sign-off',phone:'9123456780',email:'rahul@proptiger.com',cpref:'Agreed — within 3 business days',score:68,tier:'warm',sc:{need:30,budget:18,urgency:18,authority:14},notes:'Strong fit, relevant use case. Not final decision maker. No extreme urgency.',action:'Send UAE voice AI case study. Follow-up call in 2 days. Ask for intro to decision maker.',avc:'at',ini:'RS'},
+  {name:'Anita Desai',company:'Curefit · 80 people',need:'Automate appointment booking & scheduling',budget:'Under ₹50k/month',timeline:'Next quarter (3–6 months)',authority:'Researching for my manager',phone:'8877665544',email:'anita.d@curefit.in',cpref:'Agreed — within 3 business days',score:47,tier:'warm',sc:{need:25,budget:8,urgency:10,authority:7},notes:'Relevant use case, low budget, not decision maker, moderate timeline.',action:'Send ROI calculator. Ask for decision maker intro. Follow up in 1 week.',avc:'aa',ini:'AD'},
+  {name:'Vikram Nair',company:'Startup · 5 people',need:'Just exploring',budget:'No budget decided yet',timeline:'Just exploring for now',authority:'Just checking out options',phone:'',email:'',cpref:'Declined contact',score:8,tier:'cold',sc:{need:10,budget:3,urgency:3,authority:2},notes:'No budget, no urgency, vague need, declined contact. Not ICP.',action:'Newsletter only. No direct follow-up.',avc:'ac',ini:'VN'}
+];
+var active=null;
+
+function ts(){return new Date().toLocaleTimeString([],{hour:'2-digit',minute:'2-digit'});}
+
+function rwf(){
+  document.getElementById('wf').innerHTML=WFL.map(function(l,i){
+    var c=i<step?'wd':i===step?'wa':'wp';
+    return '<div class="wf-step"><div class="wf-dot '+c+'">'+(i<step?'✓':i+1)+'</div><div class="wl">'+l+'</div></div>';
+  }).join('');
+}
+
+function addm(role,html){
+  var el=document.getElementById('msgs');
+  var d=document.createElement('div');
+  d.className='msg '+role;
+  d.innerHTML='<div class="bbl">'+html+'</div><div class="mtime">'+ts()+'</div>';
+  el.appendChild(d);el.scrollTop=el.scrollHeight;
+}
+
+function se(m){var e=document.getElementById('err');e.textContent=m;e.style.display='block';}
+function he(){document.getElementById('err').style.display='none';}
+
+function showOpts(opts){
+  var a=document.getElementById('opts');
+  a.style.display='flex';
+  a.innerHTML=opts.map(function(o,i){return'<button class="opt" onclick="doOpt('+i+')">'+o.l+'</button>';}).join('');
+}
+function hideOpts(){var a=document.getElementById('opts');a.style.display='none';a.innerHTML='';}
+
+function showCF(){document.getElementById('cform').style.display='flex';document.getElementById('irow').style.display='none';hideOpts();}
+function hideCF(){document.getElementById('cform').style.display='none';document.getElementById('irow').style.display='flex';}
+
+function doOpt(i){
+  if(done)return;
+  var q=FLOW[step];var o=q.opts[i];
+  if(o.other){
+    hideOpts();
+    var a=document.getElementById('opts');
+    a.style.display='flex';
+    a.innerHTML='<div style="display:flex;gap:6px;width:100%;"><input id="oi" type="text" maxlength="120" placeholder="Describe your need (max 120 chars)" style="flex:1;font-size:13px;padding:8px 12px;border:1px solid #dee2e6;border-radius:8px;background:#f8f9fa;"/><button onclick="doOther()" style="padding:0 12px;font-size:12px;background:#185FA5;color:#fff;border:none;border-radius:8px;cursor:pointer;">OK</button></div>';
+    return;
+  }
+  hideOpts();he();
+  addm('usr',o.l);
+  D[q.id]=o.l;
+  if(o.s)Object.keys(o.s).forEach(function(k){SC[k]=(SC[k]||0)+o.s[k];});
+  step++;rwf();setTimeout(doNext,350);
+}
+
+function doOther(){
+  var v=(document.getElementById('oi')?document.getElementById('oi').value:'').trim();
+  if(!v){se('Please describe your need.');return;}
+  he();hideOpts();
+  var q=FLOW[step];
+  addm('usr',v);D[q.id]=v;SC.need=10;
+  step++;rwf();setTimeout(doNext,350);
+}
+
+function doText(){
+  if(done)return;
+  var inp=document.getElementById('inp');
+  var v=inp.value.trim();
+  if(!v){se('Please type something to continue.');return;}
+  he();inp.value='';
+  var q=FLOW[step];
+  addm('usr',v);D[q.id]=v;
+  step++;rwf();setTimeout(doNext,350);
+}
+
+function doContact(pref){
+  he();
+  if(pref!=='no'){
+    var ph=(document.getElementById('c-ph').value||'').trim();
+    var em=(document.getElementById('c-em').value||'').trim();
+    if(!/^[5-9]\d{9}$/.test(ph)){se('Please enter a valid 10-digit Indian mobile number (must start with 5, 6, 7, 8, or 9).');return;}
+    if(!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(em)){se('Please enter a valid email address (e.g. name@company.com).');return;}
+    D.phone=ph;D.email=em;D.bonus=10;
+  }else{
+    D.phone='';D.email='';D.bonus=0;
+  }
+  var lbl={now:'Yes — contact me today','3d':'Yes — within 3 business days',no:'No thanks, just browsing'};
+  var cpref={now:'Agreed — contact today','3d':'Agreed — within 3 business days',no:'Declined contact'};
+  D.cpref=cpref[pref];
+  addm('usr',lbl[pref]);
+  hideCF();step++;rwf();
+  setTimeout(doFinalize,400);
+}
+
+function doNext(){
+  if(step>=FLOW.length){doFinalize();return;}
+  var q=FLOW[step];
+  var ask=typeof q.ask==='function'?q.ask(D):q.ask;
+  addm('bot',ask);
+  if(q.type==='opts')showOpts(q.opts);
+  else if(q.type==='contact')showCF();
+}
+
+function doFinalize(){
+  done=true;
+  document.getElementById('sbtn').disabled=true;
+  document.getElementById('inp').disabled=true;
+  hideCF();hideOpts();he();
+  var raw=SC.need+SC.budget+SC.urgency+SC.authority+(D.bonus||0);
+  var score=Math.min(raw,100);
+  var dec=D.cpref==='Declined contact';
+  var tier=dec?'cold':score>=70?'hot':score>=40?'warm':'cold';
+  var notes=bldNotes(score,tier,dec);
+  var action=bldAction(tier,dec);
+  var ini=(D.name||'??').split(' ').map(function(w){return w[0];}).join('').slice(0,2).toUpperCase();
+  var lead={
+    name:D.name||'Unknown',company:D.company||'Unknown',
+    need:D.need||'—',budget:D.budget||'—',
+    timeline:D.timeline||'—',authority:D.authority||'—',
+    phone:D.phone||'',email:D.email||'',cpref:D.cpref||'—',
+    score:score,tier:tier,sc:{need:SC.need,budget:SC.budget,urgency:SC.urgency,authority:SC.authority},
+    notes:notes,action:action,avc:AVC[leads.length%AVC.length],ini:ini
+  };
+  var msg=tier==='hot'
+    ?'Thank you, '+lead.name+'! Our team will reach out on WhatsApp within a few hours.'
+    :tier==='warm'
+    ?'Thank you, '+lead.name+'! Someone from our team will be in touch within 3 business days.'
+    :'Thank you, '+lead.name+'! We\'ve noted your details and will keep you updated.';
+  addm('bot',msg);
+  step=7;rwf();
+  leads.unshift(lead);active=lead;
+  rpPipeline();rpBrief(lead);rpDash();
+}
+
+function bldNotes(score,tier,dec){
+  var p=[];
+  if(SC.need>=25)p.push('Clear relevant use case');else p.push('Use case vague');
+  if(SC.budget>=18)p.push('budget above threshold');else if(SC.budget>=8)p.push('budget below threshold');else p.push('no budget defined');
+  if(SC.urgency>=18)p.push('urgent timeline');else if(SC.urgency>=10)p.push('moderate timeline');else p.push('no urgency');
+  if(SC.authority>=14)p.push('strong decision influence');else p.push('limited authority');
+  if(dec)p.push('declined contact — do not reach out without consent');
+  else if(D.bonus)p.push('valid contact details provided');
+  return p.join(', ').replace(/^./,function(c){return c.toUpperCase();})+'. Score: '+score+'/100.';
+}
+
+function bldAction(tier,dec){
+  if(dec)return'Newsletter only. Do not call or email — no consent given.';
+  if(tier==='hot')return'Call within 2 hours on WhatsApp. Send demo link and relevant case study before the call.';
+  if(tier==='warm')return'Send ROI one-pager on WhatsApp within 24 hours. Follow-up call in 2–3 business days.';
+  return'Add to nurture newsletter. Low priority. Revisit in 60 days.';
+}
+
+function rpPipeline(){
+  document.getElementById('plist').innerHTML=leads.map(function(l,i){
+    return'<div class="lrow" onclick="viewL('+i+')">'
+      +'<div class="av '+l.avc+'">'+l.ini+'</div>'
+      +'<div class="li"><div class="ln">'+l.name+'</div><div class="ld">'+l.company+' — '+l.need+'</div></div>'
+      +'<div style="text-align:right;min-width:72px;"><span class="bdg b'+l.tier[0]+'">'+l.tier+'</span>'
+      +'<div style="font-size:11px;color:#666;margin-top:2px;"><strong>'+l.score+'</strong>/100</div></div>'
+      +'</div>';
+  }).join('');
+  var hot=leads.filter(function(l){return l.tier==='hot';}).length;
+  var avg=Math.round(leads.reduce(function(s,l){return s+l.score;},0)/leads.length);
+  document.getElementById('pt').textContent=leads.length;
+  document.getElementById('ph').textContent=hot;
+  document.getElementById('pa').textContent=avg+'%';
+}
+
+function viewL(i){active=leads[i];rpBrief(active);sw('brief');}
+
+function rpBrief(r){
+  document.getElementById('bem').style.display='none';
+  document.getElementById('bcon').style.display='block';
+  document.getElementById('bn').textContent=r.name;
+  document.getElementById('bco').textContent=r.company;
+  document.getElementById('bne').textContent=r.need;
+  document.getElementById('bbu').textContent=r.budget;
+  document.getElementById('bti').textContent=r.timeline;
+  document.getElementById('bau').textContent=r.authority;
+  document.getElementById('bph').textContent=r.phone||'Not provided';
+  document.getElementById('bem2').textContent=r.email||'Not provided';
+  document.getElementById('bcp').textContent=r.cpref||'—';
+  document.getElementById('bno').textContent=r.notes;
+  document.getElementById('bac').textContent=r.action;
+  document.getElementById('bb').innerHTML='<span class="bdg b'+r.tier[0]+'">'+r.tier+'</span>';
+  document.getElementById('btier').textContent=r.tier.charAt(0).toUpperCase()+r.tier.slice(1)+' lead';
+  document.getElementById('bspc').textContent=r.score+'/100';
+  var sf=document.getElementById('bsf');
+  sf.style.width=r.score+'%';
+  sf.style.background=r.score>=70?'#27ae60':r.score>=40?'#f39c12':'#e74c3c';
+  var dims=[
+    {l:'Need fit',v:r.sc?r.sc.need||0:0,m:30,c:'#185FA5'},
+    {l:'Budget',v:r.sc?r.sc.budget||0:0,m:25,c:'#27ae60'},
+    {l:'Urgency',v:r.sc?r.sc.urgency||0:0,m:25,c:'#f39c12'},
+    {l:'Authority',v:r.sc?r.sc.authority||0:0,m:20,c:'#9b59b6'},
+  ];
+  document.getElementById('bdims').innerHTML=dims.map(function(d){
+    return'<div style="margin-bottom:7px;">'
+      +'<div style="display:flex;justify-content:space-between;font-size:11px;color:#666;margin-bottom:3px;"><span>'+d.l+'</span><span>'+d.v+'/'+d.m+'</span></div>'
+      +'<div class="sbar"><div class="sf" style="width:'+Math.round(d.v/d.m*100)+'%;background:'+d.c+';"></div></div>'
+      +'</div>';
+  }).join('');
+}
+
+function rpDash(){
+  var hot=leads.filter(function(l){return l.tier==='hot';}).length;
+  var warm=leads.filter(function(l){return l.tier==='warm';}).length;
+  var cold=leads.filter(function(l){return l.tier==='cold';}).length;
+  var vc=leads.filter(function(l){return l.phone&&l.email;}).length;
+  document.getElementById('dt').textContent=leads.length;
+  document.getElementById('dh').textContent=hot;
+  document.getElementById('dw').textContent=warm;
+  document.getElementById('dc').textContent=cold;
+  document.getElementById('dvc').textContent=vc;
+  document.getElementById('dch').innerHTML=leads.map(function(l){
+    return'<div style="display:flex;align-items:center;gap:8px;margin-bottom:6px;">'
+      +'<div style="font-size:11px;color:#666;min-width:80px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">'+l.name+'</div>'
+      +'<div style="flex:1;height:14px;background:#e9ecef;border-radius:3px;overflow:hidden;">'
+      +'<div style="width:'+Math.max(l.score,2)+'%;height:100%;background:'+(l.score>=70?'#27ae60':l.score>=40?'#f39c12':'#e74c3c')+';border-radius:3px;"></div></div>'
+      +'<div style="font-size:11px;font-weight:600;min-width:28px;text-align:right;">'+l.score+'</div></div>';
+  }).join('');
+  var nc={};
+  leads.forEach(function(l){var k=l.need.slice(0,40);nc[k]=(nc[k]||0)+1;});
+  document.getElementById('dne').innerHTML=Object.entries(nc).sort(function(a,b){return b[1]-a[1];}).map(function(e){
+    return'<div style="display:flex;justify-content:space-between;padding:6px 0;border-bottom:1px solid #f1f3f5;font-size:12px;">'
+      +'<span style="color:#666;">'+e[0]+(e[0].length>=40?'…':'')+'</span>'
+      +'<span style="font-weight:600;">'+e[1]+'</span></div>';
+  }).join('');
+}
+
+function doCopyBrief(){
+  var r=active||leads[0];if(!r||!r.name)return;
+  var t='LEAD QUALIFICATION BRIEF\n\nName: '+r.name+'\nCompany: '+r.company+'\nWhatsApp: '+(r.phone||'—')+'\nEmail: '+(r.email||'—')+'\nContact preference: '+r.cpref+'\nNeed: '+r.need+'\nBudget: '+r.budget+'\nTimeline: '+r.timeline+'\nAuthority: '+r.authority+'\nScore: '+r.score+'/100 ('+r.tier.toUpperCase()+')\n\nNotes: '+r.notes+'\nNext action: '+r.action;
+  if(navigator.clipboard){navigator.clipboard.writeText(t).then(function(){alert('Brief copied!');}).catch(function(){alert('Copy failed.');});}
+  else{alert('Copy failed — try in Chrome or Edge.');}
+}
+
+function doCopyCRM(){
+  var r=active||leads[0];if(!r||!r.name)return;
+  var hdr=CRM_HEADERS.join('\t');
+  var row=[r.name,r.company,r.phone||'',r.email||'',r.cpref,r.need,r.budget,r.timeline,r.authority,r.score,r.tier,r.action,new Date().toLocaleDateString()].join('\t');
+  var full=hdr+'\n'+row;
+  if(navigator.clipboard){
+    navigator.clipboard.writeText(full).then(function(){
+      var el=document.getElementById('crm-ok');
+      el.style.display='block';
+      setTimeout(function(){el.style.display='none';},4000);
+    }).catch(function(){alert('Copy failed.');});
+  }else{alert('Copy failed — try in Chrome or Edge.');}
+}
+
+function sw(tab){
+  document.querySelectorAll('.tab').forEach(function(t){t.classList.remove('active');});
+  document.querySelectorAll('.panel').forEach(function(p){p.classList.remove('active');});
+  document.querySelector('[onclick="sw(\''+tab+'\')"]').classList.add('active');
+  document.getElementById('panel-'+tab).classList.add('active');
+}
+
+function doReset(){
+  D={};SC={need:0,budget:0,urgency:0,authority:0,bonus:0};step=0;done=false;
+  document.getElementById('msgs').innerHTML='';
+  document.getElementById('inp').disabled=false;
+  document.getElementById('sbtn').disabled=false;
+  document.getElementById('irow').style.display='flex';
+  he();hideOpts();hideCF();rwf();
+  setTimeout(function(){addm('bot',FLOW[0].ask);},300);
+}
+
+rwf();rpPipeline();rpDash();
+setTimeout(function(){addm('bot',FLOW[0].ask);},300);
+</script>
+</body>
+</html>
