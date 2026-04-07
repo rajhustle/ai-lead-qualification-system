@@ -1,42 +1,49 @@
 # AI Lead Qualification & Handoff System
 
-**What is this project?**  
-It is a smart tool that automatically qualifies sales leads through a structured conversation. It replaces manual calling/emailing with a chatbot that asks the right questions, scores the lead, and gives the sales team a ready-to-use summary.
+**A smart, 100% offline tool that turns random prospect conversations into scored, sales-ready leads.**
 
-**What it does (step by step):**  
-1. Opens a clean chat and asks 8 simple BANT questions (Name, Company, Need, Budget, Timeline, Authority, Contact)  
-2. Automatically gives every lead a score out of 100  
-3. Tags the lead as Hot, Warm or Cold  
-4. Creates a full “Rep Brief” that the sales person can copy and send  
-5. Shows all leads in a Pipeline and Dashboard with scores and analytics  
-6. Has a complete n8n workflow diagram so it can be used in real production (WhatsApp, Slack, Gmail, CRM)
+No API key. No cost. No hallucination. Works exactly like the deterministic logic I used in real production Voice AI systems for USA and UAE clients.
 
 **Live Demo**  
 👉 https://rajhustle.github.io/ai-lead-qualification-system/
 
-### Screenshots (what the tool looks like)
+### What the project does (step by step)
+1. Opens a clean chat and asks 8 structured BANT questions  
+2. Automatically scores the lead 0–100 across Need, Budget, Urgency, Authority + Contact bonus  
+3. Tags it as **Hot / Warm / Cold**  
+4. Generates a complete “Rep Brief” with score breakdown and next action  
+5. Shows all leads in Pipeline + Dashboard with analytics  
+6. Includes full n8n workflow diagram for real production use (WhatsApp, Slack, Gmail, CRM)
 
-![Qualifier Chat](1-qualifier.png)  
-**1. Live Chat** – Starts asking questions automatically
+### Screenshots
 
-![Pipeline View](2-pipeline.png)  
-**2. Pipeline** – All leads listed with scores
+**1. Qualifier Chat (Live conversation)**
+![Qualifier Chat](Screenshot%202026-04-07%20at%2010-39-51%20AI%20Lead%20Qualification%20%26%20Handoff%20System.png)
 
-![Rep Brief](3-rep-brief.png)  
-**3. Rep Brief** – Auto-generated summary for sales team
+**2. Pipeline View (All prospects listed)**
+![Pipeline](Screenshot%202026-04-07%20at%2010-40-23%20AI%20Lead%20Qualification%20%26%20Handoff%20System.png)
 
-![Dashboard](4-dashboard.png)  
-**4. Dashboard** – Scores, hot leads, analytics
+**3. Rep Brief (Auto-generated handoff for sales team)**
+![Rep Brief](Screenshot%202026-04-07%20at%2010-53-07%20AI%20Lead%20Qualification%20%26%20Handoff%20System.png)
 
-![n8n Workflow](5-n8n-workflow.png)  
-**5. Production Workflow** – How to connect it to WhatsApp + CRM
+**4. Dashboard (Analytics & scores)**
+![Dashboard](Screenshot%202026-04-07%20at%2010-53-22%20AI%20Lead%20Qualification%20%26%20Handoff%20System.png)
+
+**5. n8n Production Workflow**
+![n8n Workflow](Screenshot%202026-04-07%20at%2010-53-41%20AI%20Lead%20Qualification%20%26%20Handoff%20System.png)
+
+**6. How It Works (Full logic explained)**
+![How it works](Screenshot%202026-04-07%20at%2010-54-02%20AI%20Lead%20Qualification%20%26%20Handoff%20System.png)
 
 ### How to run it (only 10 seconds)
-- Just click the Live Demo link above  
+- Click the **Live Demo** link above  
 OR  
-- Download the repo → double-click the file **index.html** → it opens in your browser (Chrome/Firefox/Edge)
+- Download the repo → double-click the file `index.html` → it opens in Chrome/Firefox/Edge
 
-No installation. No API key. Works offline.
+No installation. No login. Works even offline.
+
+### Why this project helps me in job applications
+It proves I can build **reliable, deterministic AI systems** that actually work in production — exactly what Solutions Engineer / Revenue Growth / Pre-Sales roles need.
 
 Built by **Kaushal Raj**  
 Applied AI Engineer | Solutions Engineer | Revenue Growth Partner  
